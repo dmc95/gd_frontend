@@ -11,7 +11,7 @@ const NewsDashboard = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://api.polygon.io/v2/reference/news?limit=10&apiKey=twkp9CD6f52IuhhvtCwBN2FC1rx6mS3M"
+          `https://api.polygon.io/v2/reference/news?limit=10&apiKey=${process.env.REACT_APP_POLYGON}`
         );
         setData(response.data);
         setIsLoading(false);
