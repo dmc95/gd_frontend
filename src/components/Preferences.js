@@ -6,7 +6,7 @@ import FavoritesTickers from './FavoritesTickers';
 const Preferences = ({ onTimeFilterChange, token, favoritesUpdated }) => {
   
   
-  const [data, setData] = useState([]);
+  const [setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

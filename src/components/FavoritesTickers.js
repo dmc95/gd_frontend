@@ -9,7 +9,7 @@ const FavoritesTickers = ({token }) => {
   const handleRemoveTicker = async (ticker) => {
     try {
        await axios.post(
-        `http://localhost:5000/users/remove-to-favorites`,
+        `https://gd-backend-ggq9.onrender.com/remove-to-favorites`,
         { token: token, ticker: ticker },
         { withCredentials: true }
       );
@@ -37,7 +37,7 @@ const FavoritesTickers = ({token }) => {
       }
     };
     fetchData();
-  }, [token]);
+  }, [token, data]);
 
 
   return isLoading ? (

@@ -20,7 +20,7 @@ const CarouselEtf = ({divParent, divCard, styleText, divText}) => {
           }
         };
         fetchData();
-      }, []);
+      }, [data]);
 // 
   return isLoading ? (
     <Spin />
