@@ -5,8 +5,8 @@ import FavoritesTickers from './FavoritesTickers';
 
 const Preferences = ({ onTimeFilterChange, token, favoritesUpdated }) => {
   
-  
-  const [setData] = useState([]);
+  // eslint-disable-next-line
+  const [data,setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
