@@ -66,7 +66,7 @@ const Dashboard = ({ token }) => {
           </div>
 
           <div className="flex xl:flex-col">
-            <div className="w-full md:w-1/2 m-2 h-[300px] max-md:hidden xl:h-1/6 h-[200px] borderColor border xl:mx-2 overflow-y-scroll rounded-lg bgCard w-[300px] xl:w-fit">
+            <div className="w-full md:w-1/2 m-2 h-[300px] max-md:hidden xl:h-1/6 h-[200px] borderColor border xl:mx-2 overflow-y-scroll rounded-lg w-[300px] xl:w-fit bg-black/10 backdrop-blur-[2px]">
               <NewsDashboard />
             </div>
             <div className="mx-auto w-[305px] sm:w-full md:w-1/2 xl:h-[600px] md:h-[300px] h-[200px] border borderColor xl:mx-2 max-xl:m-2 xl:w-auto rounded-lg z-10 bg-black/10 backdrop-blur-[3px] text-white">
@@ -77,7 +77,7 @@ const Dashboard = ({ token }) => {
             </div>
           </div>
 
-          <div className="xl:w-5/12 2xl:w-3/12 h-44 xl:h-[757px] m-2 border borderColor rounded-lg overflow-y-scroll bgCard">
+          <div className="xl:w-5/12 2xl:w-3/12 h-44 xl:h-[757px] m-2 border borderColor rounded-lg overflow-y-scroll bg-black/10 backdrop-blur-[2px]">
           <Preferences
               favoritesUpdated={favoritesUpdated}
                 onTimeFilterChange={handleTimeFilterChange}
